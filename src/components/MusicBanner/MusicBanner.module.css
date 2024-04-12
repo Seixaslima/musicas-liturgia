@@ -1,0 +1,28 @@
+.music_banner {
+  width: 80vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (width > 819px) {
+  .music_banner {
+    width: 40vw;
+  }
+
+  @media screen and (width >= 1440px) {
+    .music_banner {
+      width: 25rem;
+    }
+  }
+}

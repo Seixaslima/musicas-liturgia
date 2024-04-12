@@ -1,9 +1,15 @@
-import React from 'react'
+import style from './home.module.css'
+import MusicBanner from '@/components/MusicBanner/MusicBanner'
+import json from "@/data/musicas.json"
+
+const musicas = process.env.teste ? json.musicas_test : json.musicas
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <main className={style.container} > 
+      {musicas.map(musica => (
+        <MusicBanner key={musica.id} src={musica.url} title={musica.title} />
+      ))}
+    </main>
   )
 }
