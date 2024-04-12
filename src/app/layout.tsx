@@ -8,6 +8,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Musicas Liturgia",
   description: "Musicas para liturgia",
+  openGraph: {
+    title: 'Musicas Liturgia',
+    description: 'Musicas para liturgia de entrega',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Musicas Liturgia',
+    description: 'Musicas para liturgia de entrega', // Must be an absolute URL
+  },
   other: {
     "google-adsense-account": 'ca-pub-1129823157320382',
   }
@@ -19,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt_BR">
       <head>
         <Script
           async

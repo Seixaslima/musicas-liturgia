@@ -16,18 +16,6 @@ export default function Home() {
       {musicas.map(musica => (
         <MusicBanner key={musica.id} src={musica.url} title={musica.title} />
       ))}
-      {/* <Script
-        async
-        src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1129823157320382'
-        crossOrigin='anonymous'></Script>
-      <ins className="adsbygoogle"
-        style={{ display: "block" }}
-        data-ad-format="autorelaxed"
-        data-ad-client="ca-pub-1129823157320382"
-        data-ad-slot="1017959153"></ins>
-      <Script>
-        {'(adsbygoogle = window.adsbygoogle || []).push({ });'}
-      </Script> */}
     </main >
   )
 }
