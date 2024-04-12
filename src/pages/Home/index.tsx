@@ -16,8 +16,10 @@ export default function Home() {
       {musicas.map(musica => (
         <MusicBanner key={musica.id} src={musica.url} title={musica.title} />
       ))}
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1129823157320382"
-        crossOrigin='anonymous'></script>
+      {/* <Script
+        async
+        src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1129823157320382'
+        crossOrigin='anonymous'></Script>
       <ins className="adsbygoogle"
         style={{ display: "block" }}
         data-ad-format="autorelaxed"
@@ -25,7 +27,7 @@ export default function Home() {
         data-ad-slot="1017959153"></ins>
       <Script>
         {'(adsbygoogle = window.adsbygoogle || []).push({ });'}
-      </Script>
+      </Script> */}
     </main >
   )
 }
