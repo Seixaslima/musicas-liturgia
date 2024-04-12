@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Musicas Liturgia",
   description: "Musicas para liturgia",
+  other: {
+    "google-adsense-account": 'ca-pub-1129823157320382',
+  }
 };
 
 export default function RootLayout({
