@@ -6,7 +6,7 @@ interface IMusicPlayer {
 
 export default function MusicPlayer({ src }: IMusicPlayer) {
   return (
-    <audio controls className={style.player}>
+    <audio controls className={style.player} preload="metadata">
       <source src={src.replace('.mp3', ".ogg")} type="audio/ogg" />
       <source src={src} type="audio/mpeg" />
     </audio>
